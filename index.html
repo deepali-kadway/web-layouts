@@ -25,6 +25,27 @@
             background-color: lightpink;
             border: 1px solid black;
         }
+        .relative-position{
+            position: relative; /*Relative positioning allows you to move an element relative to its normal position*/
+            bottom: 15px; /*Moves the element down by 25px*/
+            background-color: lightgreen;
+            border: 1px solid black;
+        }
+        .absolute-position{
+            position: absolute; /*Absolute positioning allows you to position an element relative to its nearest positioned ancestor*/
+            top: 100px; /*Moves the element down by 50px from the top of the nearest positioned ancestor*/
+            left: 15px;
+            height: 110px;
+            background-color: rgb(202, 31, 174);
+            border: 1px solid black;
+        }
+        .relative{
+            position: relative;
+            width: 500px;
+            height: 350px;
+            border: 1px solid black;
+            background-color: lime;
+        }
     </style>
 </head>
 <body>
@@ -39,5 +60,10 @@
         <strong>Inline-block</strong> elements are those that flow with the text and do not start on a new line. 
         They also <span class="inline-block">maintain their size and shape like block elements.</span>
     </p>
+    <p>Float property can be used to move elements to the left or right on the page and allow text to wrap around it.</p>
+    <div class="relative">The <span class="relative-position">Position proprty </span>specifies the type of positioning  method used for element.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repellendus exercitationem id deleniti vel non, fuga quaerat sequi tenetur eligendi doloremque earum corporis dicta consectetur, cum, iure odio hic ipsa?
+    <div class="absolute-position">Absolute div. It is positioned relative to the nearest parent element that has a position property value of relative.</div>
+    </div>
 </body>
 </html>
