@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+      }
+
+      .grid-item {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid</h1>
+    <p>
+      Any HTML element can be a grid container. The display property of the
+      container element is to the value of grid. The grid container contains
+      grid items. Grid items are direct children of the grid container. This
+      means the grid container is the parent element.
+    </p>
+
+    <p>
+      The grid container display property could be set to inline-grid for the
+      items to flow like inline elements (lose width/height) in a grid format.
+    </p>
+
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+  </body>
+</html>
