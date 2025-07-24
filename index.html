@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layouts</title>
+    <style>
+        .block{
+            display: block; /*Block elements take up the full width of the container*/
+            width: 100%;
+            height: auto;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+        .inline{
+            display: inline;
+            width: 3000px;  /*This is to show that inline elements do not take up the full width of the container*/
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        .inline-block{
+            display: inline-block; /*Inline-block elements flow with the text and do not start on a new line*/
+            width: 200px; /*Inline-block elements maintain their size and shape like block elements*/
+            height: 50px;
+            background-color: lightpink;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Layouts</h1>
+    <p>Traditional flow of HTML elements are to be stacked on top of each other
+        <span class="block">Block elements start on a new line and take up the full width available</span>
+    </p>
+    <p><strong>Inline</strong> elements are those that starts on a new line only take up as much as necessary. Strong is an eg of inline elements<br>
+    <span class="inline">Span tags</span>  are also inline elements, that do not take up an width or height.
+    </p>
+    <p>
+        <strong>Inline-block</strong> elements are those that flow with the text and do not start on a new line. 
+        They also <span class="inline-block">maintain their size and shape like block elements.</span>
+    </p>
+</body>
+</html>
